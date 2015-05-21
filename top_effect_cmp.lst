@@ -1,0 +1,131 @@
+HO: SNP with high rank for Milk and Milk pers.                                                       13:21 Monday, July 28, 2014   1
+
+                                                         yld_       pers_                 pers_
+Obs    chrome    location             name              effect     effect     yld_rank     rank    cmb_rank
+
+  2      14       1801116    ARS-BFGL-NGS-4939         24.0262    0.015985        1          1         2   
+  4      14       1651311    ARS-BFGL-NGS-57820        21.9069    0.012952        2          2         4   
+  7      14       2054457    ARS-BFGL-NGS-107379       15.6548    0.008617        3          4         7   
+  8      14       1967325    BovineHD1400000262        13.5751    0.008478        4          5         9   
+ 12      28      18663296    BTA-63683-no-rs           10.5552    0.007608        7          6        13   
+ 14      14       1696470    ARS-BFGL-NGS-94706        10.9777    0.006367        6          8        14   
+ 15      14       1489496    Hapmap30383-BTC-005848    11.9597    0.005339        5         14        19   
+ 16       5      88830128    BovineHD0500025189         9.6501    0.005615        8         12        20   
+ 21      14       1675278    ARS-BFGL-NGS-34135         9.4840    0.004553       11         22        33   
+ 23       5      88945532    Hapmap58253-rs29024365     6.5022    0.005206       20         15        35   
+ 24      14       1427669    BovineHD1400000143         7.9516    0.004574       14         21        35   
+ 26      14       2909929    ARS-BFGL-NGS-18858         7.2426    0.004515       17         24        41   
+ 31      14       1868636    BovineHD1400000243         9.4855    0.003897        9         39        48   
+ 46       5      93650463    BovineHD0500026578         6.1932    0.003682       28         47        75   
+ 47       5      23897275    BovineHD0500006952         4.6748    0.004032       50         33        83   
+HO: SNP with high rank for Fat and Fat pers.                                                         13:21 Monday, July 28, 2014   2
+
+                                                         yld_       pers_                 pers_
+Obs    chrome    location    name                       effect     effect     yld_rank     rank    cmb_rank
+
+  1      14       1801116    ARS-BFGL-NGS-4939         1.17952    0.013790        1          1         2   
+  3      14       1651311    ARS-BFGL-NGS-57820        1.00542    0.010815        2          2         4   
+  9      14       2084067    BovineHD1400000288        0.46519    0.007584        6          5        11   
+ 10      14       2117455    ARS-BFGL-NGS-18365        0.43532    0.008230        7          4        11   
+ 11      14       2054457    ARS-BFGL-NGS-107379       0.61076    0.005727        3          9        12   
+ 17      28      18663296    BTA-63683-no-rs           0.31903    0.007105       18          6        24   
+ 18       5      93995487    BovineHD0500026682        0.30142    0.010317       23          3        26   
+ 20      14       2524432    Hapmap30086-BTC-002066    0.36095    0.004866       14         18        32   
+ 25       5      94774194    ARS-BFGL-NGS-20806        0.27335    0.005094       28         13        41   
+ 27      14       1880378    BovineHD1400000246        0.42856    0.003732        9         34        43   
+ 28       5      93650463    BovineHD0500026578        0.25070    0.005317       33         11        44   
+ 29      14       2138926    Hapmap30922-BTC-002021    0.33111    0.003989       16         29        45   
+ 30      14       1892559    BovineHD1400000249        0.42769    0.003726       10         36        46   
+ 33       5      93489775    BovineHD0500026533        0.26284    0.004641       31         20        51   
+ 34       5      88776643    BTB-01278164              0.18340    0.005894       46          7        53   
+ 35       5      93289787    BovineHD0500026491        0.22179    0.004923       38         15        53   
+ 36      14       2386688    ARS-BFGL-NGS-26520        0.36628    0.003430       13         41        54   
+ 37      14       1868636    BovineHD1400000243        0.42026    0.003225       11         44        55   
+ 38      14       1463676    Hapmap30381-BTC-005750    0.31499    0.003707       19         37        56   
+ 39      14       2802526    BovineHD1400000453        0.20190    0.004643       42         19        61   
+ 40      14       2553525    Hapmap30646-BTC-002054    0.27734    0.003653       26         38        64   
+ 41      14       2909929    ARS-BFGL-NGS-18858        0.29901    0.003406       24         42        66   
+ 42       5      93920010    ARS-BFGL-NGS-95906        0.17458    0.004883       50         17        67   
+ 43      14       2398876    BovineHD4100010534        0.27515    0.003462       27         40        67   
+ 44       5      91097316    BovineHD0500025854        0.18066    0.004587       47         22        69   
+ 45       5      95601090    BovineHD0500027156        0.19414    0.004058       44         26        70   
+HO: SNP with high rank for Protein and Protein pers.                                                 13:21 Monday, July 28, 2014   3
+
+                                                          yld_          pers_                pers_
+Obs    chrome     location             name              effect        effect    yld_rank     rank    cmb_rank
+
+  5      28       18663296    BTA-63683-no-rs           0.27120    .008329130        3          1         4   
+  6       5       88830128    BovineHD0500025189        0.25105    .006672322        4          2         6   
+ 13       5       88945532    Hapmap58253-rs29024365    0.19379    .004964042        8          5        13   
+ 19      11      103289035    ARS-BFGL-NGS-31097        0.12752    .004181926       17         12        29   
+ 22      11      103304643    BovineHD1100030069        0.11418    .005636608       30          3        33   
+ 32       5       88702470    BovineHD0500025147        0.10823    .004251276       40          9        49   
+JE: SNP with high rank for Milk and Milk pers.                                                       13:21 Monday, July 28, 2014   4
+
+                                                                 yld_       pers_                 pers_
+Obs    chrome    location    name                               effect     effect     yld_rank     rank    cmb_rank
+
+  1      14       1801116    ARS-BFGL-NGS-4939                 31.4056    0.023816        1          1         2   
+  3      14       1868636    BovineHD1400000243                22.3781    0.013738        2          4         6   
+  4      14       1880378    BovineHD1400000246                21.9285    0.014183        4          2         6   
+  5      14       1892559    BovineHD1400000249                21.9837    0.014070        3          3         6   
+  7      14       1923292    Hapmap52798-ss46526455            15.9445    0.008345        6          5        11   
+  8      14       3297177    Hapmap36620-SCAFFOLD50018_7571    10.4227    0.004756       12         12        24   
+  9      14       2217163    Hapmap25384-BTC-001997            10.6833    0.004422       11         16        27   
+ 17      14       2239085    Hapmap24715-BTC-001973             8.7444    0.003441       14         31        45   
+ 20      14       2524432    Hapmap30086-BTC-002066             5.6822    0.004044       25         24        49   
+ 23      14       1651311    ARS-BFGL-NGS-57820                10.6992    0.003152       10         42        52   
+ 24      14       3720067    ARS-BFGL-BAC-17627                 4.1182    0.003440       41         32        73   
+ 25      12      72358156    ARS-BFGL-BAC-15060                 4.3208    0.003094       38         47        85   
+JE: SNP with high rank for Fat and Fat pers.                                                         13:21 Monday, July 28, 2014   5
+
+                                                     yld_          pers_                pers_
+Obs    chrome    location           name            effect        effect    yld_rank     rank    cmb_rank
+
+  2      14       1801116    ARS-BFGL-NGS-4939     0.98073    .006320854        1          2         3   
+ 10      14       1585385    BovineHD1400000187    0.21290    .003545245       19         15        34   
+ 11      14       1868636    BovineHD1400000243    0.71604    .002895153        4         30        34   
+ 12      19      38481236    BovineHD1900011148    0.16024    .004983462       31          4        35   
+ 15      14       1880378    BovineHD1400000246    0.73132    .002565001        2         41        43   
+ 21      14       1892559    BovineHD1400000249    0.72842    .002513850        3         47        50   
+JE: SNP with high rank for Protein and Protein pers.                                                 13:21 Monday, July 28, 2014   6
+
+                                                                  yld_          pers_                pers_
+Obs    chrome     location    name                               effect        effect    yld_rank     rank    cmb_rank
+
+  6      14        1801116    ARS-BFGL-NGS-4939                 0.44503    .004683060        4          4         8   
+ 13      11      103289035    ARS-BFGL-NGS-31097                0.13922    .003849459       25         11        36   
+ 14      14        3297177    Hapmap36620-SCAFFOLD50018_7571    0.16445    .003253539       16         20        36   
+ 16      19       38481236    BovineHD1900011148                0.12200    .004412113       37          7        44   
+ 18      14        1880378    BovineHD1400000246                0.29423    .002774769        8         37        45   
+ 19      14        1892559    BovineHD1400000249                0.29635    .002751757        7         39        46   
+ 22      14        1868636    BovineHD1400000243                0.30499    .002586021        6         44        50   
+BS: SNP with high rank for Fat and Fat pers.                                                         13:21 Monday, July 28, 2014   7
+
+                                                       yld_          pers_                pers_
+Obs    chrome    location            name             effect        effect    yld_rank     rank    cmb_rank
+
+ 1        5      90866134    BTA-05125-rs29019289    0.10455    .000575769       14         10        24   
+ 2        5      89135219    BovineHD0500025289      0.09866    .000505428       22         48        70   
+AY: SNP with high rank for Milk and Milk pers.                                                       13:21 Monday, July 28, 2014   8
+
+                                                          yld_          pers_                pers_
+Obs    chrome     location             name              effect        effect    yld_rank     rank    cmb_rank
+
+ 1       31       60454458    BovineHD3000017531         5.9366    .003844204       15          8        23   
+ 2        5      112743369    BTA-75110-no-rs           11.8682    .001121535        5         29        34   
+ 3        5      112374372    Hapmap23876-BTA-143610    11.5687    .001121535        6         30        36   
+ 7        5      112411964    BovineHD0500032479         5.5065    .000690573       20         48        68   
+AY: SNP with high rank for Fat and Fat pers.                                                         13:21 Monday, July 28, 2014   9
+
+                                                  yld_          pers_                pers_
+Obs    chrome    location         name           effect        effect    yld_rank     rank    cmb_rank
+
+ 6       29      37237891    BTA-65647-no-rs    0.17815    .000598448       13         40        53   
+AY: SNP with high rank for Protein and Protein pers.                                                 13:21 Monday, July 28, 2014  10
+
+                                                          yld_          pers_                pers_
+Obs    chrome     location             name              effect        effect    yld_rank     rank    cmb_rank
+
+ 4        5      112743369    BTA-75110-no-rs           0.18406    .001021872       10         29        39   
+ 5        5      112374372    Hapmap23876-BTA-143610    0.16299    .001021872       15         30        45   

@@ -1,0 +1,85 @@
+#!/bin/bash
+# Create a new text file that contains the Ensembl gene names for all
+# genes that are associated with the 200 largest SNP effects for each
+# pair of traits (yield and persistency).
+
+breeds="ay bs ho je"
+traits="Milk Fat Protein SCS"
+
+for breed in $breeds; do
+	echo "Breed: ${breed}"
+	for trait in $traits; do
+		echo "        Trait: ${trait}"
+		# Prepare filenames
+		echo "                Preparing filenames."
+		old_yld_file="all_snp_${breed}_${trait}_april.txt"
+		new_yld_file="all_snp_${breed}_${trait}.txt.sorted"
+		sho_yld_file="all_snp_${breed}_${trait}.txt.sorted.500"
+		old_pers_file="all_snp_${breed}_${trait}_pers_april.txt"
+		new_pers_file="all_snp_${breed}_${trait}_pers.txt.sorted"
+		sho_pers_file="all_snp_${breed}_${trait}_pers.txt.sorted.500"
+		hi_hi_joint_file="all_snp_${breed}_${trait}_hi_pers_hi_yld_shared.txt"
+		hi_lo_joint_file="all_snp_${breed}_${trait}_hi_pers_lo_yld_shared.txt"
+		lo_hi_joint_file="all_snp_${breed}_${trait}_lo_pers_hi_yld_shared.txt"
+		# Sort input files in descending order of effect size
+		echo "                Large pers, large yld"
+		echo "                        Sorting input files."
+		sort -g -r -k 3 "${old_yld_file}" > "${new_yld_file}"
+		sort -g -r -k 3 "${old_pers_file}" > "${new_pers_file}"
+		##
+		## First set of intersections: look at networks induced by
+		## genes common to the top 500 SNP of each yld-pers combination.
+		##
+		# Keep the top 500 from each set
+		head -n 500 "${new_yld_file}" > "${sho_yld_file}"
+		head -n 500 "${new_pers_file}" > "${sho_pers_file}"
+		# Compute the intersections
+		echo "                        Computing intersections."
+		sort -k 1 "${sho_yld_file}" -o "${sho_yld_file}"
+		sort -k 1 "${sho_pers_file}" -o "${sho_pers_file}"
+		join -o 1.1 -o 1.2 -o 1.3 -o 2.3 -j 1 "${sho_yld_file}" "${sho_pers_file}" > "${hi_hi_joint_file}"
+		##
+		## Now, let's look at the SNP with large effects on pers and
+		## small effects on yld. Recall that the allele substitution
+		## effects are in additive genetic SD, so small values are
+		## near 0 and correspond with small effects on the trait.
+		##
+		# Sort input files in descending order of effect size
+		echo "                Large pers, small yld"
+		echo "                        Sorting input files."
+		sort -g -k 3 "${old_yld_file}" > "${new_yld_file}"
+		sort -g -r -k 3 "${old_pers_file}" > "${new_pers_file}"
+		# Keep the top 200 from each set
+		head -n 500 "${new_yld_file}" > "${sho_yld_file}"
+		head -n 500 "${new_pers_file}" > "${sho_pers_file}"
+		# Compute the intersections
+		echo "                        Computing intersections."
+		sort -k 1 "${sho_yld_file}" -o "${sho_yld_file}"
+		sort -k 1 "${sho_pers_file}" -o "${sho_pers_file}"
+		join -o 1.1 -o 1.2 -o 1.3 -o 2.3 -j 1 "${sho_yld_file}" "${sho_pers_file}" > "${hi_lo_joint_file}"
+		##
+		## Now, let's look at the SNP with small effects on pers and
+		## large effects on yld. Recall that the allele substitution
+		## effects are in additive genetic SD, so small values are
+		## near 0 and correspond with small effects on the trait.
+		##
+		# Sort input files in descending order of effect size
+		echo "                Small pers, large yld"
+		echo "                        Sorting input files."
+		sort -g -r -k 3 "${old_yld_file}" > "${new_yld_file}"
+		sort -g -k 3 "${old_pers_file}" > "${new_pers_file}"
+		# Keep the top 200 from each set
+		head -n 500 "${new_yld_file}" > "${sho_yld_file}"
+		head -n 500 "${new_pers_file}" > "${sho_pers_file}"
+		# Compute the intersections
+		echo "                        Computing intersections."
+		sort -k 1 "${sho_yld_file}" -o "${sho_yld_file}"
+		sort -k 1 "${sho_pers_file}" -o "${sho_pers_file}"
+		join -o 1.1 -o 1.2 -o 1.3 -o 2.3 -j 1 "${sho_yld_file}" "${sho_pers_file}" > "${lo_hi_joint_file}"
+
+
+		## Clean up
+		rm "${new_yld_file}" "${new_pers_file}"
+		rm "${sho_yld_file}" "${sho_pers_file}"
+	done
+done
